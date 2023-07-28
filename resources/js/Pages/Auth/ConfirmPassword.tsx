@@ -18,7 +18,7 @@ export default function ConfirmPassword() {
         };
     }, []);
 
-    const submit = (e) => {
+    const submit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         post(route('password.confirm'));

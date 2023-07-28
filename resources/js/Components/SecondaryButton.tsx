@@ -1,6 +1,12 @@
 import React from "react";
+import { Type } from "typescript";
 
-export default function SecondaryButton({ type = "button", className = '', disabled, children, ...props }) {
+interface SecondaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    className?: string;
+    isFocused?: boolean;
+}
+
+export default function SecondaryButton({ type = "button", className = '', disabled, children, ...props }: SecondaryButtonProps) {
     return (
         <button
             {...props}

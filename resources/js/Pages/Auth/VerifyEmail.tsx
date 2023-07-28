@@ -6,7 +6,7 @@ import React from 'react';
 export default function VerifyEmail({ status }) {
     const { post, processing } = useForm({});
 
-    const submit = (e) => {
+    const submit = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         post(route('verification.send'));

@@ -21,7 +21,7 @@ export default function ResetPassword({ token, email }) {
         };
     }, []);
 
-    const submit = (e) => {
+    const submit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         post(route('password.store'));
