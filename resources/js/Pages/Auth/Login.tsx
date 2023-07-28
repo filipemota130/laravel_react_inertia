@@ -4,7 +4,7 @@ import GuestLayout from '@/Layouts/GuestLayout.js';
 import InputError from '@/Components/InputError.js';
 import InputLabel from '@/Components/InputLabel.js';
 import PrimaryButton from '@/Components/PrimaryButton.js';
-import TextInput from '@/Components/TextInput.jsx';
+import TextInput from '@/Components/TextInput.js';
 import { Head, Link, useForm } from '@inertiajs/react';
 import React from 'react';
 
@@ -36,7 +36,6 @@ export default function Login({ status, canResetPassword }) {
             <form onSubmit={submit}>
                 <div>
                     <InputLabel htmlFor="email" value="Email" children={undefined} />
-
                     <TextInput
                         id="email"
                         type="email"
@@ -47,7 +46,6 @@ export default function Login({ status, canResetPassword }) {
                         isFocused={true}
                         onChange={(e) => setData('email', e.target.value)}
                     />
-
                     <InputError message={errors.email} className="mt-2" />
                 </div>
 

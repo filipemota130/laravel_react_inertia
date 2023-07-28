@@ -12,7 +12,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             href={route('dashboard')}
                             className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                         >
-                            Dashboard
+                            Dashboardasdasdsadsd
                         </Link>
                     ) : (
                         <>
@@ -72,7 +72,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </div>
 
                                     <h2 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                                        Documentation
+                                        Documentation asdasdsdadasd
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
