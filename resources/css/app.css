@@ -5,3 +5,7 @@
 div {
     display: grid;
 }
+
+.logo{
+    background-image: url("../../public/VQDT_logo.svg")
+}
